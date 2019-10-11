@@ -32,10 +32,13 @@ let s:orange = { "cterm": 208, "gui": "#FF9700" }
 let s:white = { "cterm": 231, "gui": "#ffffff" }
 let s:light_grey = { "cterm": 250, "gui": "#bcbcbc" }
 let s:grey = { "cterm": 245, "gui": "#8a8a8a" }
-let s:dark_grey = { "cterm": 59, "gui": "#5f5f5f" }
-let s:darker_grey = { "cterm": 238, "gui": "#444444" }
+let s:dark_grey = { "cterm": 238, "gui": "#444444" }
+" let s:dark_grey = { "cterm": 240, "gui": "#585858" }
+" let s:dark_grey = { "cterm": 59, "gui": "#5f5f5f" }
+let s:darker_grey = { "cterm": 236, "gui": "#303030" }
 let s:light_charcoal = { "cterm": 238, "gui": "#292929" }
-let s:charcoal = { "cterm": 235, "gui": "#262626" }
+let s:charcoal = { "cterm": 234, "gui": "#1c1c1c" }
+" let s:charcoal = { "cterm": 235, "gui": "#262626" }
 
 let s:danger = { "cterm": 197, "gui": "#ff005f" }
 let s:olive = { "cterm": 64, "gui": "#5f8700" }
@@ -79,7 +82,7 @@ call Highlight("SpellRare", s:white, s:danger, s:none)
 call Highlight("SpellCap", s:charcoal, s:orange, s:italic)
 call Highlight("SpellLocal", s:charcoal, s:orange, s:italic)
 
-call Highlight("CursorLineNR", s:yellow, s:none, s:none)
+call Highlight("CursorLineNR", s:yellow, s:dark_grey, s:none)
 
 call Highlight("CursorColumn", s:none, s:darker_grey, s:none)
 call Highlight("ColorColumn", s:none, s:light_charcoal, s:none)
@@ -93,10 +96,10 @@ call Highlight("Whitespace", s:dark_grey, s:none, s:none)
 
 call Highlight("TabLineSel", s:none, s:charcoal, s:bold)
 
-call Highlight("SignColumn", s:grey, s:darker_grey, s:none)
+call Highlight("LineNr", s:grey, s:darker_grey, s:none)
 call Highlight("NonText", s:darker_grey, s:none, s:none)
 call Highlight("TabLineFill", s:none, s:darker_grey, s:none)
-call Highlight("LineNr", s:darker_grey, s:none, s:none)
+call Highlight("SignColumn", s:darker_grey, s:none, s:none)
 call Highlight("VertSplit", s:darker_grey, s:charcoal, s:none)
 call Highlight("StatusLine", s:white, s:dark_grey, s:none)
 call Highlight("StatusLineNC", s:light_grey, s:darker_grey, s:none)
